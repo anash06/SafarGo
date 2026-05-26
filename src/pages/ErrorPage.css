@@ -1,0 +1,56 @@
+.error-page-wrapper {
+  min-height: calc(100vh - 56px);
+}
+
+.error-page-content {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem 3rem;
+}
+
+.error-code {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.error-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-dark);
+}
+
+.error-description {
+  font-size: 1.05rem;
+  color: #334155;
+  margin-bottom: 2rem;
+}
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.error-outline-btn {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.error-outline-btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 640px) {
+  .error-code {
+    font-size: 3rem;
+  }
+
+  .error-title {
+    font-size: 1.75rem;
+  }
+}

@@ -9,6 +9,7 @@ import DestinationDetail from './pages/DestinationDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Admin from './pages/Admin';
+import ErrorPage from './pages/ErrorPage';
 
 function AppContent() {
   const location = useLocation();
@@ -25,6 +26,7 @@ function AppContent() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
       {!isAdminPage && <Footer />}
